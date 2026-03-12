@@ -1,4 +1,4 @@
-{{- range $i := until .Values.numberOfCronJobs }}
+{{- range $i := until 70 }}
 ---
 apiVersion: batch/v1
 kind: CronJob
