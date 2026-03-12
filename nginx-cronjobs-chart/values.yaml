@@ -1,0 +1,8 @@
+numberOfCronJobs: 70
+image:
+  repository: nginx
+  tag: latest
+  pullPolicy: IfNotPresent
+schedule: "*/5 * * * *"  # Example schedule, can be customized
+resources: {}
+env: []

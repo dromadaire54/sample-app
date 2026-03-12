@@ -1,0 +1,19 @@
+{{- range $i := until .Values.cronjobCount }}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ printf "nginx-cronjob-%d" (add $i 1) }}
+  labels:
+    app: nginx-cronjob
+spec:
+  schedule: "*/5 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: nginx
+            image: nginx:latest
+          restartPolicy: OnFailure
+{{- end }}

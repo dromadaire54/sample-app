@@ -1,0 +1,6 @@
+apiVersion: v2
+name: nginx-cronjobs-chart
+description: A Helm chart to create multiple Nginx cron jobs
+type: application
+version: 0.1.0
+appVersion: "1.21.6"
