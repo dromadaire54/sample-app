@@ -1,4 +1,4 @@
-{{- range $i := until 70 }}
+{{- range $i := until 100 }}
 ---
 apiVersion: batch/v1
 kind: CronJob
