@@ -1,4 +1,4 @@
-numberOfCronJobs: 70
+numberOfCronJobs: 20
 image:
   repository: nginx
   tag: latest
